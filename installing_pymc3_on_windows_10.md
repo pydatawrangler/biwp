@@ -1,12 +1,15 @@
 # Installing a Working Version of PYMC3 v3.8 on Windows 10
 
-## NOT SURE IF NEEDED - Install mingw-w64
+## OPTIONAL (not needed) - Install mingw-w64
 Install `mingw-w64` as administrator, and add path to `g++.exe` to User Environment variables.  For me, the path is `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin`.
 I am not sure if this step is needed since I also installed the `m2w64-toolchain win-64` using conda as shown below.
 
 ## Install Miniconda
 1. Download from https://docs.conda.io/en/latest/miniconda.html for your Window 10 configuration (mostly likely 64-bit).  Note, as of 7/27/2020, the latest version of Python is 3.7.
-2. Run downloaded file (`Miniconda3-latest-Windows-x86_64.exe`).  I choose the defaults and select adding to path.
+2. Run downloaded file (`Miniconda3-latest-Windows-x86_64.exe`).
+   - I installed just for me (user privileges)
+   - I chose the default path.
+   - I checked the box to <bold>Add Miniconda3 to my PATH environment variable</bold>
 
 ## Create New Conda Environment and install M2W64-toolchain
 1. Open command prompt and activate the base environment for Miniconda by typing `conda activate base`.
@@ -15,7 +18,7 @@ I am not sure if this step is needed since I also installed the `m2w64-toolchain
 4. Test Python version by typing `python` at the command prompt.  Then type `quit`.
 5. Install m2w64-toolchain for 64-bit machine by typing `conda install -c conda-forge m2w64-toolchain_win-64`.
 
-## NOT SURE IF NEEDED - Install M2W64-toolchain in Base Conda Environment
+## OPTIONAL (not needed) - Install M2W64-toolchain in Base Conda Environment
 1. If still in the new environment, type `conda deactivate`.
 2. Open command prompt and activate the base environment for Miniconda by typing `conda activate base`.
 3. Install m2w64-toolchain for 64-bit machine by typing `conda install -c conda-forge m2w64-toolchain_win-64`.
