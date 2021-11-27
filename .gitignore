@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # PDF documents
-.pdf 
+*.pdf 
 
 # Resources
 /resources/
