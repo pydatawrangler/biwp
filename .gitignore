@@ -132,4 +132,4 @@ dmypy.json
 .pdf 
 
 # Resources
-resources/
+/resources/
