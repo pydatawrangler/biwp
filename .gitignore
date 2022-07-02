@@ -133,3 +133,9 @@ dmypy.json
 
 # Resources
 /resources/
+
+# Book Repo
+BookRepo/
+
+# Graphics
+*.png 
