@@ -1,0 +1,28 @@
+---
+title: "DAGs with R and ggdag"
+author: Tom Madsen
+date: "3/24/2023"
+format: html
+---
+
+[Youtube Link - PMAP 8521 - Example: DAGs with R and ggdag](https://youtu.be/uoAjyyToUTE)
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ggdag)
+library(dagitty)
+```
+
+```{r}
+simple_dag <- dagify(
+    outcome ~ program + a + b,
+    program ~ a + b,
+    exposure = "program",
+    outcome = "outcome"
+)
+
+set.seed(1234)
+ggdag_status(simple_dag) + theme_dag()
+
+```
+
