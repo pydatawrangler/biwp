@@ -1,0 +1,33 @@
+---
+title: "Bayes Rules"
+format:
+    html:
+        self-contained: true
+---
+
+# Preface
+
+## Book Links
+
+Book Website: [Bayes Rules! An Introduction to Applied Bayesian Modeling](https://www.bayesrulesbook.com/)
+
+Github Repo for book resources: <https://github.com/bayes-rules>
+
+Github Repo for `bayesrules`: <https://github.com/bayes-rules/bayesrules>
+
+## Getting Setup
+
+# Chapter 1 - The Big (Bayesian) Picture
+
+# Chapter 2 - Bayes' Rule
+
+```{r}
+# Load packages
+library(bayesrules)
+library(tidyverse)
+library(janitor)
+
+# Import and glimpse article data
+data(fake_news)
+glimpse(fake_news)
+```

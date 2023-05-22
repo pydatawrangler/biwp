@@ -1,6 +1,10 @@
 ---
-title: "Untitled"
-format: html
+title: "Statistical Rethinking 2E"
+subtitle: "Chapter 2"
+author: "Tom Madsen"
+format:
+    html:
+        self-contained: true
 ---
 
 ## R code 2.1
@@ -8,4 +12,10 @@ format: html
 ```{r}
 ways <- c(0, 3, 8, 9, 0)
 ways/sum(ways)
+```
+## R code 2.2
+
+```{r}
+dbinom(6, size = 9, prob = 0.5)
+
 ```
