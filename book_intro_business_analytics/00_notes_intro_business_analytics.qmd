@@ -1,5 +1,10 @@
 ---
-title: "Untitled"
-format: html
+title: "A Business Analyst's Introduction to Business Analytics (Second Edition)"
+format:
+    html:
+        self-contained: true
 ---
 
+## Link to Online Textbook
+
+https://www.causact.com/
