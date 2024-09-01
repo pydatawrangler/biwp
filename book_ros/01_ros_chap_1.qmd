@@ -1,0 +1,32 @@
+---
+title: "Chapter 1 - Overview"
+subtitle: "Regression and Other Stories"
+format:
+    html:
+        self-contained: true
+---
+
+## Load Packages
+
+```{r}
+library("rstanarm")
+library("arm")
+library("ggplot2")
+library("bayesplot")
+theme_set(bayesplot::theme_default(base_family = "sans"))
+```
+
+```{r}
+file_path <- 'ROS-Examples-master/ElectionsEconomy/data/hibbs.dat'
+
+hibbs <- read.table(file_path, header=TRUE)
+
+plot(hibbs$growth, hibbs$vote, xlab="Average recent growth in personal income", ylab="Incumbent party's vote share")
+
+M1 <- stan_glm(vote ~ growth, data = hibbs)
+
+abline(coef(M1), col="gray")
+
+print(M1)
+```
+## Through page 8
