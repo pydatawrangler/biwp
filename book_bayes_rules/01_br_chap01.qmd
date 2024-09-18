@@ -1,0 +1,19 @@
+---
+title: "01_br_chap01"
+format: 
+  html:
+    self-contained: true
+    number-sections: true
+---
+
+# Chapter 1
+
+## Thinking like a Bayesian
+
+### Quiz your self
+
+1. c. 2
+2. b. 3
+3. b. 1
+4. b. 1
+Total = 7

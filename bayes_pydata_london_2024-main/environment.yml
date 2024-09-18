@@ -1,0 +1,25 @@
+name: pymc_pydata_2024
+
+channels:
+ - conda-forge
+ 
+dependencies:
+- python
+- arviz
+- ipython
+- jax
+- jupyterlab
+- notebook
+- ipykernel
+- numpy
+- numpyro
+- pandas
+- patsy
+- pip
+- python-graphviz
+- pymc
+- pymc-marketing
+- scikit-learn
+- scipy
+- seaborn
+- watermark

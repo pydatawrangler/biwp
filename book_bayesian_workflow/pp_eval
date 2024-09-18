@@ -1,0 +1,48 @@
+---
+title: "Untitled"
+format: html
+---
+
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import pymc as pm
+import preliz as pz
+```
+
+```{python}
+pp_mass = pd.read_csv('pred-prey-mass.csv')
+pp_mass.head()
+
+pp_mass.info()
+
+pp_mass.min(), pp_mass.max()
+```
+
+```{python}
+pp_mass.plot("pred", "prey", kind="scatter", loglog=True)
+```
+
+```{python}
+with pm.Model() as model:
+    α = pm.Normal("α", 0, 100)
+    β = pm.Normal("β", 0, 100)
+    σ = pm.HalfNormal("σ", 5)
+    prey = pm.Normal("prey", α + β * pp_mass.log_pred, σ, observed=pp_mass.log_prey)
+
+model.debug()
+```
+
+```{python}
+def pp_model(α_mu=0, α_σ=100, β_σ=100, σ_σ=5):
+    α = pz.Normal(α_mu, α_σ).rvs()
+    β = pz.Normal(β_mu, β_σ).rvs()
+    σ = pz.HalfNormal(σ_σ).rvs()
+    prey = pz.Normal(α + β * pp_mass.log_pred, σ).rvs()
+    return prey
+```
+
+```{python}
+
+```
