@@ -1,7 +1,9 @@
 ---
 title: "Chapter 3"
 subtitle: "Statistical Rethinking"
-format: html
+format:
+    html:
+        self-contained: true
 ---
 
 ## R code 3.1
