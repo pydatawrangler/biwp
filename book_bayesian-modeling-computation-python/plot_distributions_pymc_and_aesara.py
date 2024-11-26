@@ -12,8 +12,8 @@
 # In[1]:
 
 
-import aesara
-import aesara.tensor as at
+# import aesara
+# import aesara.tensor as at
 import pymc as pm
 import matplotlib.pyplot as plt
 import numpy as np
@@ -23,7 +23,7 @@ import scipy.stats
 # In[2]:
 
 
-aesara.__version__
+# aesara.__version__
 
 
 # In[3]:
