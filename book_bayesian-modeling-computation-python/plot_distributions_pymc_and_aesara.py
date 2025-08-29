@@ -56,7 +56,7 @@ y.type
 # In[7]:
 
 
-aesara.dprint(y)
+# aesara.dprint(y)
 
 
 # In[8]:
